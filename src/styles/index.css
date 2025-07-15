@@ -1,11 +1,65 @@
-/* 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.container {
+  max-width: 350px;
+  margin: 75px auto;
+  text-align: center;
+  background-image: url('https://tse4.mm.bing.net/th/id/OIP.6GxBQIwQpKrqPASFiayawAHaHM?rs=1&pid=ImgDetMain&o=7&rm=3');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px;
+  border-radius: 5px;
+  color: black;
+  min-height: 600px; 
+}
 
-*/
+h1 {
+  margin-bottom: 50px;
+}
+
+.task-input {
+  padding: 8px;
+  width: 75%;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.task-list {
+  list-style: none;
+  padding: 25px;
+  margin: 25px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.delete-button {
+  display: none;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.task-item:hover .delete-button {
+  display: inline;
+}
+
+.empty-message {
+  color: gray;
+}
+
+.task-count {
+  color: gray;
+  margin-top: 10px;
+}	
